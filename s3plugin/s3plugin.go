@@ -95,7 +95,7 @@ func GetAPIVersion(c *cli.Context) {
 func readAndValidatePluginConfig(configFile string) (*PluginConfig, error) {
 	config := &PluginConfig{}
 	contents, err := ioutil.ReadFile(configFile)
-	panic("test")
+
 	if err != nil {
 		return nil, err
 	}
@@ -301,6 +301,7 @@ func isDirectoryGetSize(path string) (bool, int64) {
 }
 
 func getFileSize(S3 s3iface.S3API, bucket string, fileKey string) (int64, error) {
+	panic("test")
 	req, resp := S3.HeadObjectRequest(&s3.HeadObjectInput{
 		Bucket: aws.String(bucket),
 		Key:    aws.String(fileKey),
