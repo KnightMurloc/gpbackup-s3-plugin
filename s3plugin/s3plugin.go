@@ -29,7 +29,7 @@ import (
 )
 
 var Version string
-fgyukgykugyu
+
 const apiVersion = "0.5.0"
 const Mebibyte = 1024 * 1024
 const DefaultConcurrency = 6
@@ -95,6 +95,7 @@ func GetAPIVersion(c *cli.Context) {
 func readAndValidatePluginConfig(configFile string) (*PluginConfig, error) {
 	config := &PluginConfig{}
 	contents, err := ioutil.ReadFile(configFile)
+	panic("test")
 	if err != nil {
 		return nil, err
 	}
