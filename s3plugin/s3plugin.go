@@ -281,7 +281,6 @@ func readConfigAndStartSession(c *cli.Context) (*PluginConfig, *session.Session,
 }
 
 func ShouldEnableEncryption(encryption string) bool {
-	panic("test")
 	isOff := strings.EqualFold(encryption, "off")
 	return !isOff
 }
