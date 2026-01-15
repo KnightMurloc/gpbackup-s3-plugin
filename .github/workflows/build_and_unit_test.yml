@@ -26,6 +26,8 @@ jobs:
       with:
         go-version: "1.23"
 
+    - env:
+        GOPATH: /home/runner/work/gpbackup-s3-plugin/gpbackup-s3-plugin/go
     # - name: Set Environment
     #   run: |
     #     echo "GOPATH=/home/runner/work/gpbackup-s3-plugin/gpbackup-s3-plugin/go" >> $GITHUB_ENV
